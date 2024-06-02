@@ -14,6 +14,8 @@ const TWO_EXTRA_LARGE = '0px 24px 48px -12px rgba(16, 24, 40, 0.18)';
 
 const THREE_EXTRA_LARGE = '0px 32px 64px -12px rgba(16, 24, 40, 0.14)';
 
+// @TODO: move to get shadow funtion.
+
 export const SHADOWS = {
   [SHADOW_SIZES.EXTRA_SMALL]: EXTRA_SMALL,
   [SHADOW_SIZES.SMALL]: SMALL,

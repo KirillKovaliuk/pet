@@ -20,4 +20,6 @@ export interface IThemeHandlers {
   mode: TThemeMode;
   onChangeMode:(themeMode: TThemeMode) => void;
   onChangeBrandColor: (brandColor: TBrandColor) => void;
+  schema: object;
+  palette: object;
 }

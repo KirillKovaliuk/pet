@@ -24,6 +24,6 @@ export const getLightTheme = (palette: TPalette) => ({
   button: getLightThemeButtons(palette),
   ring: getLightThemeFocusRings(palette),
   spacing: SPACING,
-  shadows: SHADOWS,
+  shadow: SHADOWS,
   typography: TYPOGRAPHY_TEXT,
 });

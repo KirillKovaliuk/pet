@@ -20,6 +20,7 @@ const Container = ({
 
   const theme = {
     ...(mode === 'dark' ? themes.dark : themes.light),
+    fontBase: `Inter, ${themes.dark.fontBase}`,
     appContentBg: schema.background.primary,
     textColor: schema.text.primary,
   };
@@ -82,8 +83,8 @@ const preview: Preview = {
         order: [
           'Introduction', ['Welcome'],
           'Documentation', ['Design methodology', 'Folder structure', 'Code style', 'Libs and Tools', '*'],
-          'Foundations',
-          'Elements', ['Palette', 'Icon', 'Typography'],
+          'Foundations', ['Theme', 'Palette', 'Shadows', 'Focus rings', 'Blurs', 'Spacing', '*'],
+          'Elements', ['Typography', 'Button', 'Icon', '*'],
           'Components'
         ],
       },

@@ -18,7 +18,7 @@ export const StyledTextFieldBorder = styled.div<ITextFieldBorderStyles>`
   border: 1px solid ${({ theme, $destructive }) => theme.border[$destructive ? 'error' : 'primary']};
   border-radius: 8px; // @TODO: get from theme.
   transition: all .2s ease-in; // @TODO: move transition to theme or constants.
-  box-shadow: ${({ theme }) => theme.shadows['extra-small']};
+  box-shadow: ${({ theme }) => theme.shadow['extra-small']};
   height: ${({ $size }) => toPixels(TEXT_FIELD_HEIGHTS_MAP[$size || SIZES.SMALL])};
   padding: ${({ $size }) => TEXT_FIELD_PADDINGS_MAP[$size || SIZES.SMALL]};
   background: ${({ $disabled, theme }) => ($disabled ? theme.background['disabled-subtle'] : 'none')};

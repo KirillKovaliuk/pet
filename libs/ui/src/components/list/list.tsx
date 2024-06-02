@@ -9,7 +9,7 @@ export function List<T>({
   data,
   children: renderItem,
   className,
-  gap = DEFAULT_GAP,
+  gap = DEFAULT_GAP, // @TODO: update gap values with spacing constants.
   horizontal = false,
   wrap = false,
 } : IListProps<T>) {

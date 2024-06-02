@@ -24,6 +24,6 @@ export const getDarkTheme = (palette: TPalette) => ({
   button: getDarkThemeButtons(palette),
   ring: getDarkThemeFocusRings(palette),
   spacing: SPACING,
-  shadows: SHADOWS,
+  shadow: SHADOWS,
   typography: TYPOGRAPHY_TEXT,
 });

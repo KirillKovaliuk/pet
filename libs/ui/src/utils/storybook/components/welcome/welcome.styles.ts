@@ -5,7 +5,7 @@ export const StyledWrapper = styled.section`
   flex-direction: row;
 
   img {
-    width: 50%;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
   }
@@ -17,7 +17,7 @@ export const StyledWelcome = styled.div`
   justify-content: center;
   gap: 20px;
   padding: 0 30px;
-  width: 50%;
+  max-width: 540px;
   height: 100vh;
 `;
 

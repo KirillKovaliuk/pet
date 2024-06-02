@@ -7,6 +7,7 @@ export const SHORT_VARIABLES_MAP : { [key: string]: string } = {
   utility: 'utility',
   button: 'button',
   ring: 'ring',
+  shadow: 'shadow',
 };
 
 export const EXCLUDED_VARIABLES = ['button', 'ring', 'typography', ''];

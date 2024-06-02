@@ -29,6 +29,8 @@ export function Theme({
 
   const themeHandlers = {
     mode,
+    palette,
+    schema,
     onChangeMode,
     onChangeBrandColor,
   };

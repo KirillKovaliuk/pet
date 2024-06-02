@@ -1,4 +1,4 @@
-import { Button } from '@pet/ui';
+import { Button } from '@craftpane/ui';
 
 export function renderAction() {
   return (

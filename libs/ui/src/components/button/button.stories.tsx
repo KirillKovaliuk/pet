@@ -7,7 +7,7 @@ import {
   hierarchyArgumentType,
   optionalIconArgumentType,
   sizeArgumentType,
-} from '../../utils';
+} from '../../utils/storybook';
 
 import { Button as ButtonUI } from './button';
 import { HIERARCHIES } from './button.constants';

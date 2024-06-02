@@ -111,7 +111,7 @@ const primaryButtonStyles = css<IButtonStyles>`
   background: ${getButtonStylesByType('primary', 'background')};
   border: 1px solid ${getButtonStylesByType('primary', 'border')};
   color: ${getButtonStylesByType('primary', 'foreground')};
-  box-shadow: ${({ theme }) => theme.shadows['extra-small']};
+  box-shadow: ${({ theme }) => theme.shadow['extra-small']};
 
   &:hover:not(:disabled) {
     background: ${getButtonStylesByType('primary', 'background-hover')};

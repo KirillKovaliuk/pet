@@ -41,7 +41,7 @@ export function Welcome() {
             </Button>
           </StyledLink>
           {/* eslint-disable-next-line no-restricted-globals */}
-          <StyledLink href={`${location.origin}/pet/?path=/docs/documentation-design-methodology--overview`} rel="noreferrer">
+          <StyledLink href={`${location.origin}/pet/?path=/story/elements-button--sandbox`} rel="noreferrer">
             <Button>
               Изучить компоненты
             </Button>

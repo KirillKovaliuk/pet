@@ -1,0 +1,567 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button />: should render primary button component correctly 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  width: auto;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  font-weight: 600;
+  font-style: normal;
+  min-height: 44px;
+  padding: 10px 16px;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  background: #7F56D9;
+  border: 1px solid  #7F56D9;
+  color: #ffffff;
+  box-shadow: 0px 1px 2px rgba(16,24,40,0.05);
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:hover:not(:disabled) {
+  background: #9E77ED;
+  border: 1px solid  #9E77ED;
+}
+
+.c0:focus {
+  box-shadow: 0px 1px 2px 0px rgba(22,27,38,0.05),0px 0px 0px 4px rgba(158,119,237,0.24);
+}
+
+.c0:disabled {
+  color: #85888E;
+  background: #1F242F;
+  border: 1px solid #1F242F;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  primary label
+</button>
+`;
+
+exports[`<Button />: should render primary button component with icons correctly 1`] = `
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+
+.c1 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  width: auto;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  font-weight: 600;
+  font-style: normal;
+  min-height: 44px;
+  padding: 10px 16px;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  background: #7F56D9;
+  border: 1px solid  #7F56D9;
+  color: #ffffff;
+  box-shadow: 0px 1px 2px rgba(16,24,40,0.05);
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:hover:not(:disabled) {
+  background: #9E77ED;
+  border: 1px solid  #9E77ED;
+}
+
+.c0:focus {
+  box-shadow: 0px 1px 2px 0px rgba(22,27,38,0.05),0px 0px 0px 4px rgba(158,119,237,0.24);
+}
+
+.c0:disabled {
+  color: #85888E;
+  background: #1F242F;
+  border: 1px solid #1F242F;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  <span
+    className="c1"
+  >
+    <check.svg />
+  </span>
+  primary label
+  <span
+    className="c1"
+  >
+    <edit.svg />
+  </span>
+</button>
+`;
+
+exports[`<Button />: should render primary destructive button component correctly 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  width: auto;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  font-weight: 600;
+  font-style: normal;
+  min-height: 44px;
+  padding: 10px 16px;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  background: #D92D20;
+  border: 1px solid  #D92D20;
+  color: #ffffff;
+  box-shadow: 0px 1px 2px rgba(16,24,40,0.05);
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:hover:not(:disabled) {
+  background: #F04438;
+  border: 1px solid  #F04438;
+}
+
+.c0:focus {
+  box-shadow: 0px 1px 2px 0px rgba(22,27,38,0.05),0px 0px 0px 4px rgba(240,68,56,0.24);
+}
+
+.c0:disabled {
+  color: #85888E;
+  background: #1F242F;
+  border: 1px solid #1F242F;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  primary label
+</button>
+`;
+
+exports[`<Button />: should render primary fullwidth button component correctly 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  font-weight: 600;
+  font-style: normal;
+  min-height: 44px;
+  padding: 10px 16px;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  background: #7F56D9;
+  border: 1px solid  #7F56D9;
+  color: #ffffff;
+  box-shadow: 0px 1px 2px rgba(16,24,40,0.05);
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:hover:not(:disabled) {
+  background: #9E77ED;
+  border: 1px solid  #9E77ED;
+}
+
+.c0:focus {
+  box-shadow: 0px 1px 2px 0px rgba(22,27,38,0.05),0px 0px 0px 4px rgba(158,119,237,0.24);
+}
+
+.c0:disabled {
+  color: #85888E;
+  background: #1F242F;
+  border: 1px solid #1F242F;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  primary label
+</button>
+`;
+
+exports[`<Button />: should render secondary button component correctly 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  width: auto;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  font-weight: 600;
+  font-style: normal;
+  min-height: 44px;
+  padding: 10px 16px;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  background: #161B26;
+  border: 1px solid  #333741;
+  color: #CECFD2;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:hover:not(:disabled) {
+  background: #1F242F;
+  color: #F0F1F1;
+  border: 1px solid  #333741;
+}
+
+.c0:focus {
+  box-shadow: 0px 1px 2px 0px rgba(22,27,38,0.05),0px 0px 0px 4px rgba(148,150,156,0.14);
+}
+
+.c0:disabled {
+  color: #85888E;
+  background: #0C111D;
+  border: 1px solid #1F242F;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  secondary label
+</button>
+`;
+
+exports[`<Button />: should render secondary colored button component correctly 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  width: auto;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  font-weight: 600;
+  font-style: normal;
+  min-height: 44px;
+  padding: 10px 16px;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  background: #161B26;
+  border: 1px solid  #333741;
+  color: #CECFD2;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:hover:not(:disabled) {
+  background: #1F242F;
+  color: #F0F1F1;
+  border: 1px solid  #333741;
+}
+
+.c0:focus {
+  box-shadow: 0px 1px 2px 0px rgba(22,27,38,0.05),0px 0px 0px 4px rgba(158,119,237,0.24);
+}
+
+.c0:disabled {
+  color: #85888E;
+  background: #0C111D;
+  border: 1px solid #1F242F;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  secondary label
+</button>
+`;
+
+exports[`<Button />: should render tertiary button component correctly 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  width: auto;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  font-weight: 600;
+  font-style: normal;
+  min-height: 44px;
+  padding: 10px 16px;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #94969C;
+  border: none;
+  background: none;
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,0);
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:hover:not(:disabled) {
+  color: #ECECED;
+  background: #1F242F;
+}
+
+.c0:disabled {
+  color: #85888E;
+  border: 1px solid rgba(0,0,0,0);
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  tertiary label
+</button>
+`;
+
+exports[`<Button />: should render tertiary colored button component correctly 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  width: auto;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  font-weight: 600;
+  font-style: normal;
+  min-height: 44px;
+  padding: 10px 16px;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #CECFD2;
+  border: none;
+  background: none;
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,0);
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:hover:not(:disabled) {
+  color: #F0F1F1;
+  background: #1F242F;
+}
+
+.c0:disabled {
+  color: #85888E;
+  border: 1px solid rgba(0,0,0,0);
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  tertiary label
+</button>
+`;

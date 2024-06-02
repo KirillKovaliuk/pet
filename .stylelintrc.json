@@ -1,0 +1,41 @@
+{
+  "overrides": [
+    {
+      "files": ["**/*.css"],
+      "extends": ["stylelint-config-standard"],
+      "rules": {}
+    },
+    {
+      "files": ["**/*.scss"],
+      "extends": ["stylelint-config-standard-scss"],
+      "rules": {}
+    },
+    {
+      "files": ["**/*.styles.ts"],
+      "customSyntax": "postcss-styled-components",
+      "rules": {
+        "color-hex-length": "short"
+      }
+    }
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "selector-class-pattern": null,
+    "color-hex-length": "short",
+    "color-named": "always-where-possible",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ],
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": ["after-declaration", "first-nested"],
+        "ignore": ["after-comment", "inside-single-line-block"]
+      }
+    ],
+    "rule-empty-line-before": "always-multi-line"
+  }
+}

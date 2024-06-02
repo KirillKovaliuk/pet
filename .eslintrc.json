@@ -1,0 +1,104 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "plugins": ["@nx"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": ["@pet/**"],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": ["*"]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "airbnb",
+        "airbnb-typescript",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "plugins": [
+        "simple-import-sort",
+        "@typescript-eslint",
+        "import-newlines"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.base.json"
+      },
+      "rules": {
+        "no-restricted-imports": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
+        "react/jsx-props-no-spreading": "off",
+        "import/prefer-default-export": "off",
+        "import/no-named-as-default": "off",
+        "import/no-cycle": "off",
+        "import/no-extraneous-dependencies": "off",
+        "max-len": ["error", {
+          "code": 150,
+          "ignoreStrings": true
+        }],
+        "import-newlines/enforce": ["error", 2],
+        "react/function-component-definition": [
+          "error",
+          { "namedComponents": "function-declaration" }
+        ],
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              ["^react", "^", "^\\u0000"], // node_modules
+              ["^@pet/"], // apps and libs
+              ["^\\.\\."], // reltive paths(other folders)
+              ["^\\."], // relative paths (current folders)
+              [
+                "^.+\\.?(styles)$",
+                "^.+\\.?(scss)$",
+                "^.+\\.?(css)$",
+                "^.+\\.?(stories)$"
+              ] // styles in scss and ts
+            ]
+          }
+        ],
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "interface",
+            "format": ["PascalCase"],
+            "prefix": ["I"]
+          },
+          {
+            "selector": "typeAlias",
+            "format": ["PascalCase"],
+            "prefix": ["T"]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nx/javascript"],
+      "rules": {}
+    },
+    {
+      "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
+      "env": {
+        "jest": true
+      },
+      "rules": {}
+    }
+  ]
+}

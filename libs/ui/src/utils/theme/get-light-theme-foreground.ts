@@ -1,0 +1,26 @@
+import { TPalette } from '../../types';
+
+export const getLightThemeForeground = (palette: TPalette) => ({
+  primary: palette['gray-light-mode'][900],
+  secondary: palette['gray-light-mode'][700],
+  'secondary-hover': palette['gray-light-mode'][800],
+  tertiary: palette['gray-light-mode'][600],
+  'tertiary-hover': palette['gray-light-mode'][700],
+  quaternary: palette['gray-light-mode'][500],
+  'quaternary-hover': palette['gray-light-mode'][600],
+  quinary: palette['gray-light-mode'][400],
+  'quinary-hover': palette['gray-light-mode'][500],
+  senary: palette['gray-light-mode'][300],
+  white: palette.base.white,
+  disabled: palette['gray-light-mode'][400],
+  'disabled-subtle': palette['gray-light-mode'][300],
+  'brand-primary': palette.brand[600],
+  'brand-primary-alt': palette.brand[600],
+  'brand-secondary': palette.brand[500],
+  'error-primary': palette.error[600],
+  'error-secondary': palette.error[500],
+  'warning-primary': palette.warning[600],
+  'warning-secondary': palette.warning[500],
+  'success-primary': palette.success[600],
+  'success-secondary': palette.success[500],
+});

@@ -1,0 +1,25 @@
+import { TPalette } from '../../types';
+
+export const getLightThemeText = (palette: TPalette) => ({
+  primary: palette['gray-light-mode'][900],
+  'primary-on-brand': palette.base.white,
+  secondary: palette['gray-light-mode'][700],
+  'secondary-hover': palette['gray-light-mode'][800],
+  'secondary-on-brand': palette.brand[200],
+  tertiary: palette['gray-light-mode'][600],
+  'tertiary-hover': palette['gray-light-mode'][700],
+  'tertiary-on-brand': palette.brand[200],
+  quaternary: palette['gray-light-mode'][500],
+  'quaternary-on-brand': palette.brand[300],
+  white: palette.base.white,
+  disabled: palette['gray-light-mode'][500],
+  placeholder: palette['gray-light-mode'][500],
+  'placeholder-subtle': palette['gray-light-mode'][300],
+  'brand-primary': palette.brand[900],
+  'brand-secondary': palette.brand[700],
+  'brand-tertiary': palette.brand[600],
+  'brand-tertiary-alt': palette.brand[600],
+  'error-primary': palette.error[600],
+  'warning-primary': palette.warning[600],
+  'success-primary': palette.success[600],
+});

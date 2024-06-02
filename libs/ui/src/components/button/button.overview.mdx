@@ -1,0 +1,213 @@
+import { Meta } from '@storybook/addon-docs';
+import { List } from "../list";
+import { SIZES } from "../../constants";
+import { Button } from "./button";
+import { Icon } from "../icon";
+
+<Meta title="Elements/button" />
+
+# Кнопка
+
+Кнопка - это интерактивный элемент, который приводит к описанному в нем действию. Они являются одним
+из самых важных компонентов в современном дизайне пользовательского интерфейса, поэтому очень важно
+правильно использовать их в своих проектах. Самое важное правило при разработке кнопки - она должна
+выглядеть как кнопка. Она должна быть очевидной. Пользователи знакомы с тем, как выглядят кнопки и
+как они себя ведут. Чем больше кнопка "похожа" на кнопку, тем легче ее быстро и подсознательно обнаружить.
+
+Когда на странице есть несколько действий, важно расположить их в четкой иерархии. Каждое действие на
+странице занимает определенное место в иерархии важности. Большинство компонентов и страниц имеют только
+одно "основное" действие. Это главное действие, которое, скорее всего, совершит пользователь (или которое
+дизайнер хочет, чтобы он совершил). Другие действия являются "вторичными". На странице может быть более
+одного второстепенного действия. Как правило, их следует различать и по возможности располагать в последовательной
+иерархии. Возможно, вам даже понадобится третье "третичное" или даже четвертое "четвертичное" действие. Стиль
+кнопки в первую очередь используется для того, чтобы отличить более важные действия от менее важных - первичные
+действия должны быть вариантом по умолчанию и наиболее очевидными.
+
+Бытует мнение, что все "негативные" или "разрушительные" действия должны быть выделены большой красной кнопкой.
+В большинстве случаев это не обязательно, и дизайн может выглядеть и ощущаться перегруженным. Тем не менее,
+если конкретное "разрушительное" действие является основным, обычно полезно визуально обозначить его "разрушительным"
+вариантом кнопки. Это дает пользователю понять, что он собирается совершить действие, имеющее серьезные последствия.
+
+<Icon name="socials-figma" size={14} /> [Дизайн](https://www.figma.com/file/qXNcgpuRBpzUNmXAyhWOWN/%E2%9D%96-Untitled-UI-%E2%80%93-PRO-VARIABLES-(v4.0)-qkXWNpVGpSCF-(Copy)?type=design&node-id=3287-429411)
+
+Ниже вы можете увидеть основные варианты кнопок:
+
+## Primary(Главная)
+
+#### Default
+
+<List data={Object.values(SIZES)} horizontal gap={12}>
+  {(size) => (
+    <Button
+      iconBefore="placeholder"
+      iconAfter="placeholder"
+      size={size}
+    >
+      Button CTA
+    </Button>
+  )}
+</List>
+
+##### Destructive
+
+<List data={Object.values(SIZES)} horizontal gap={12}>
+  {(size) => (
+    <Button
+      iconBefore="placeholder"
+      iconAfter="placeholder"
+      size={size}
+      destructive
+    >
+      Button CTA
+    </Button>
+  )}
+</List>
+
+##### Disabled
+
+<List data={Object.values(SIZES)} horizontal gap={12}>
+  {(size) => (
+    <Button
+      iconBefore="placeholder"
+      iconAfter="placeholder"
+      size={size}
+      disabled
+    >
+      Button CTA
+    </Button>
+  )}
+</List>
+
+
+## Secondary(Вторичная)
+
+#### Default
+
+<List data={Object.values(SIZES)} horizontal gap={12}>
+  {(size) => (
+    <Button
+      hierarchy="secondary"
+      iconBefore="placeholder"
+      iconAfter="placeholder"
+      size={size}
+    >
+      Button CTA
+    </Button>
+  )}
+</List>
+
+#### Colored
+
+<List data={Object.values(SIZES)} horizontal gap={12}>
+  {(size) => (
+    <Button
+      hierarchy="secondary"
+      iconBefore="placeholder"
+      iconAfter="placeholder"
+      size={size}
+      colored
+    >
+      Button CTA
+    </Button>
+  )}
+</List>
+
+
+##### Destructive
+
+<List data={Object.values(SIZES)} horizontal gap={12}>
+  {(size) => (
+    <Button
+      hierarchy="secondary"
+      iconBefore="placeholder"
+      iconAfter="placeholder"
+      size={size}
+      destructive
+    >
+      Button CTA
+    </Button>
+  )}
+</List>
+
+##### Disabled
+
+<List data={Object.values(SIZES)} horizontal gap={12}>
+  {(size) => (
+    <Button
+      hierarchy="secondary"
+      iconBefore="placeholder"
+      iconAfter="placeholder"
+      size={size}
+      disabled
+    >
+      Button CTA
+    </Button>
+  )}
+</List>
+
+
+## Tertiary(Третичная)
+
+#### Default
+
+<List data={Object.values(SIZES)} horizontal gap={12}>
+  {(size) => (
+    <Button
+      hierarchy="tertiary"
+      iconBefore="placeholder"
+      iconAfter="placeholder"
+      size={size}
+    >
+      Button CTA
+    </Button>
+  )}
+</List>
+
+#### Colored
+
+<List data={Object.values(SIZES)} horizontal gap={12}>
+  {(size) => (
+    <Button
+      hierarchy="tertiary"
+      iconBefore="placeholder"
+      iconAfter="placeholder"
+      size={size}
+      colored
+    >
+      Button CTA
+    </Button>
+  )}
+</List>
+
+
+##### Destructive
+
+<List data={Object.values(SIZES)} horizontal gap={12}>
+  {(size) => (
+    <Button
+      hierarchy="tertiary"
+      iconBefore="placeholder"
+      iconAfter="placeholder"
+      size={size}
+      destructive
+    >
+      Button CTA
+    </Button>
+  )}
+</List>
+
+##### Disabled
+
+<List data={Object.values(SIZES)} horizontal gap={12}>
+  {(size) => (
+    <Button
+      hierarchy="tertiary"
+      iconBefore="placeholder"
+      iconAfter="placeholder"
+      size={size}
+      disabled
+    >
+      Button CTA
+    </Button>
+  )}
+</List>

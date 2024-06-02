@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+node scripts/git/check-branch-name.js && npx commitlint --edit $1 && yarn pre-commit

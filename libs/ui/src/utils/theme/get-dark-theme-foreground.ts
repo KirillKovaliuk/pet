@@ -1,0 +1,26 @@
+import { TPalette } from '../../types';
+
+export const getDarkThemeForeground = (palette: TPalette) => ({
+  primary: palette.base.white,
+  secondary: palette['gray-dark-mode'][300],
+  'secondary-hover': palette['gray-dark-mode'][200],
+  tertiary: palette['gray-dark-mode'][400],
+  'tertiary-hover': palette['gray-dark-mode'][300],
+  quaternary: palette['gray-dark-mode'][400],
+  'quaternary-hover': palette['gray-dark-mode'][300],
+  quinary: palette['gray-dark-mode'][500],
+  'quinary-hover': palette['gray-dark-mode'][400],
+  senary: palette['gray-dark-mode'][600],
+  white: palette.base.white,
+  disabled: palette['gray-dark-mode'][500],
+  'disabled-subtle': palette['gray-dark-mode'][600],
+  'brand-primary': palette.brand[500],
+  'brand-primary-alt': palette['gray-dark-mode'][300],
+  'brand-secondary': palette.brand[500],
+  'error-primary': palette.error[500],
+  'error-secondary': palette.error[400],
+  'warning-primary': palette.warning[500],
+  'warning-secondary': palette.warning[400],
+  'success-primary': palette.success[500],
+  'success-secondary': palette.success[400],
+});

@@ -1,0 +1,105 @@
+import { Meta } from '@storybook/addon-docs'; 
+import { CodeBlock } from "../utils/storybook";
+
+<Meta title='Documentation/Forms' />
+
+# Формы
+
+В качестве библиотеки для управления формами в проекте используется `react-hook-form`.
+Она предоставляет удобные и гибкие способы работы с формами, используя хуки. В большинстве
+случаев это будут простые формы и каждый раз вызывать хуки и регистрировать поле в форме утомительно.
+Предлагаю немного оптимизировать и добавить возможность создавать формы в декларативном стиле.
+
+Библиотека предоставляет встроенный компонент `Controller`, который может "слушать" поле в объекте 
+формы по имени и пробрасывать необходимые для контроля свойства.
+
+Компонент можно использовать из коробки, но как по мне лучше создать компонент `FormField` на основе `Controller`,
+где можно икапсулировать дополнительную логику, например:
+
+ - вывод ошибок валидации
+ - подсказку
+
+Для валидации данных в проекте используются `yup`. `yup` проверяет все правила и возвращает первую ошибку или массив
+ошибок (в зависимости от настройки свойства `criteria` в хуке `useForm`), которые будут выводится под полем.
+
+### Схема
+
+![Schema](images/docs/forms.png)
+
+### Компонент FormField
+
+Компонент `FormField` как и `Controller` работает исключительно в контексте формы. Имеет обязательное поле `name` и `component`.
+
+<CodeBlock text={`
+  <Form>
+      <FormField name="text-field" component={TextField} />
+      <FormField name="masked-field" component={MaskedField} mask={Number} />
+      <FormField name="select" component={Select} options={[{ label: 'label', value: 'value' }]} />
+      <FormField name="checkbox" component={Checkbox} />
+
+      <Button type="submit">Submit</Button>
+  </Form>
+`} />
+
+Все свойства, которые мы передаем в `FormField` пробрасываются для поля, которое установлено в свойстве component.
+Чтобы не ловить непонятные ошибки в рантайме, для компонента `FormField` настроена типизация:
+
+При передаче какого либо компонента поля в свойство component - Typescript подскажет какие обязательные свойства надо заполнить
+для переданного компонента.
+
+Например, у компонента `MaskedField` есть обязательное свойство `mask` или у компонента `Select` - `options` и без заполнения 
+этих свойств не пройдет компиляция.
+
+### Пример использования
+
+<CodeBlock text={`
+  interface ITestForm {
+      textField: string;
+      maskedTextField: string;
+      select: IEntityType;
+      checkbox: boolean;
+  }
+
+  const validationSchema = yup.object({
+      textField: yup.string().required('error text for required'),
+      maskedTextField: yup.string().required('error text for required'),
+      select: yup.object().required('error text for required'),
+      checkbox: yup.boolean(),
+  });
+
+  const initialValues: ITestForm = {
+      textField: "",
+      maskedTextField: "",
+      select: null,
+      checkbox: false,
+  };
+
+  function TestForm() {
+      const testForm = useForm<ITestForm>({
+          validationSchema,
+          initialValues,
+      });
+
+      const handleSubmit = testForm.handleSubmit(
+          (values) => console.log(values)
+      );
+
+      return (
+        <Form 
+            {...testForm}
+            onSubmit={handleSubmit}
+        >
+            <FormField name="textField" placeholder="textField" component={TextField} />
+            <FormField name="maskedTextField" component={MaskedField} mask={Number} />
+            <FormField name="select" component={Select} options={[{ label: 'label', value: 'value' }]} />
+            <FormField name="checkbox" component={Checkbox} label="show test" />
+
+            <Button type="submit">Submit</Button>
+        </Form>
+      );
+  }
+`} />
+
+При такой реализации мы теряем оптимизацию `react-hook-form`, которая построена на ссылках и значительно уменьшает количество
+перерендеров, но для простых форм это не критично. Но если форма содержит сложный компонент и он требует оптимизаций, то никто
+не запрещает воспользоваться методами, которые возвращает хук `useForm` и описать форму в императивном стиле.

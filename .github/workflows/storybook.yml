@@ -1,0 +1,30 @@
+name: Deploy Storybook
+
+on:
+  push:
+    branches:
+      - tech/CP-22
+
+jobs:
+  deploy-storybook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Node.js 18
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build Storybook
+        run: yarn storybook:build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: ./dist/storybook/ui

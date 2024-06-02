@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_pet_source=self.webpackChunk_pet_source||[]).push([[7904],{"./node_modules/refractor/lang/csv.js":module=>{function csv(Prism){Prism.languages.csv={value:/[^\r\n,"]+|"(?:[^"]|"")*"(?!")/,punctuation:/,/}}module.exports=csv,csv.displayName="csv",csv.aliases=[]}}]);
